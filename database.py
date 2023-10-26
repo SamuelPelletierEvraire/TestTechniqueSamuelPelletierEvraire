@@ -25,6 +25,3 @@ class Database:
 
         except(Exception, psycopg2.DatabaseError)as error:
             print(error)
-        finally:
-            if self.connection is not None:
-                self.connection.close()
